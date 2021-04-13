@@ -1,5 +1,8 @@
 'use strict';
- 
+
+// task-1/1
+
+
 const name = 'Генератор защитного поля';
 let prise = 1000;
 
