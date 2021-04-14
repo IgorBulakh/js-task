@@ -20,3 +20,4 @@ else if (password === null) {
 }
 
 console.log(alert(message));
+console.log(message);
