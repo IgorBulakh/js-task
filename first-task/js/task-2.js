@@ -4,14 +4,16 @@
 
 const total = 100;
 const order = 50;
+let answer;
 
 
 
 
 if(total <= order){
-console.log(`"На складе недостаточно твоаров!"`)
+answer = `"На складе недостаточно твоаров!"`;
 }
   else{
-  console.log(`"Заказ оформлен, с вами свяжется менеджер"`)
+  answer = `"Заказ оформлен, с вами свяжется менеджер"`;
   }
 
+console.log(answer);
