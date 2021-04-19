@@ -67,3 +67,28 @@ console.log(totalDeliver);
 
 
 
+// const c = 'Igor, Borya';
+// console.log(c);
+// const l = c.toLocaleLowerCase()
+// console.log(l);
+// const d = prompt('name').toLowerCase();
+// const m = l.includes(d)
+// console.log(m);
+
+
+// let f;
+
+// switch (c) {
+//   case d:
+//     f = 'yes';
+//     break;
+
+
+//   default:
+//     f = 'no';
+// }
+
+
+
+// console.log(f);
+
