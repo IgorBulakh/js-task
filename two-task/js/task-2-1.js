@@ -7,24 +7,18 @@
 */
 
 
-let index = 0;
+// let index = 1;
 
 const logItems = function(array) {
 
-  
-  // for (let index = 0; index < array.length; index+=1) {  
-  //   const element = array[index];  
-  //   console.log(`${index}-${element}`)
-  // }
-
-
-  for (const arrs of array){
+let index = 0;
+  for (let arrays of array){
 
     index += 1;
 
-    console.log(`${index} - ${arrs}`)
+    console.log(`${index} - ${arrays}`);
+
   }
- 
 };
 
 /*
@@ -33,3 +27,20 @@ const logItems = function(array) {
 logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
 
 logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
+
+
+function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+  // Write your code under this line
+
+  let total = orderedQuantity * pricePerDroid + deliveryFee
+  let message = `You ordered droids ${total} credits. Delivery (${deliveryFee} credits) is included in order amount.`;
+  
+  // Write your code above this line
+  return message;
+
+  
+}
+
+console.log(makeOrderMessage(2, 100, 50));
+console.log(makeOrderMessage(4, 300, 100));
+console.log(makeOrderMessage(4, 300, 100));
