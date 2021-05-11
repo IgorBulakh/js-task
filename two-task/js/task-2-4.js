@@ -13,7 +13,7 @@ const formatString = function(string) {
 
 
 if (string.length >= 40) {
-  string = string.substring(0,40) +'...';
+  string = string.substring(0, 40) +'...';
   
 }
 
