@@ -18,10 +18,8 @@ do {
   }
 
   input = Number(input);
-
   total += input;
  
-
   
 } while (true);
 
