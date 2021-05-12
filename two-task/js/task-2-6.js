@@ -8,39 +8,41 @@
 4. После того как пользователь прекратил ввод нажав Cancel, если массив не пустой, необходимо посчитать сумму всех элементов массива и записать ее в переменную total. Используй цикл for или for...of. После чего в консоль выведи строку 'Общая сумма чисел равна [сумма]'.
 */
 
-let input = prompt('ведите число');
+
 const numbers = [];
 let total = 0;
 
 
-let value = Number(input);
-if (value === null) {
+do {
+let input = prompt('ведите число');
 
-  alert(ups);
-  
+if (input === null) {
+  alert('вы отменили ввод чисел, для получения общей сумми ввода')
+  break
 }
+const value = Number(input);
+numbers.push(value);
 
 
-console.log(value)
+} while (true);
 
-
-
-
-/*
-const addNumbers = function () {
-  const value = Number(input);
-
-  if (value === 0) {
-    return
-  }
-    numbers.push(value);
-    
-  
-
- 
- console.log(numbers);
-
-}
-
-addNumbers()
+/*or this variant
+do {
+    input = prompt("Enter a number:");
+    numbers.push(Number(input));
+} while (input !== null);
 */
+
+if (numbers.length > 0) {
+  for (const number of numbers) {
+  
+  total += number;
+
+  }
+
+}
+
+console.log(numbers);
+console.log(total); 
+
+
