@@ -1,20 +1,47 @@
-const fin = {
-  lux: 147,
-  david: 21,
-  kiwi: 19,
-  chelsy: 38,
-  din: 160,
-  g: 999,
+"use strict";
+
+/*
+Напиши функцию countTotalSalary(employees) принимающую объект зарплат. Функция считает общую сумму запрплаты работников и возращает ее. Каждое поле объекта, передаваемого в функцию, имеет вид "имя":"зарплата".
+*/
+
+//===================================================
+/*
+const countTotalSalary = function (employees) {
+  let total = 0;
+  for (const key in employees) {
+    total += employees[key];
+  }
+  return total;
+};
+*/
+
+const countTotalSalary = function (employees) {
+  const valuesObj = Object.values(employees);
+  let total = 0;
+
+  for (const value of valuesObj) {
+    total += value;
+  }
+  return total;
 };
 
-console.table(fin);
-let stok = 0;
-for (const key in fin) {
-  // console.log(key);
-  // console.log(fin[key]);
-  if (stok < fin[key]) {
-    stok = key;
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(countTotalSalary({})); // 0
 
-    console.log(stok);
-  }
-}
+console.log(
+  countTotalSalary({
+    mango: 100,
+    poly: 150,
+    alfred: 80,
+  })
+); // 330
+
+console.log(
+  countTotalSalary({
+    kiwi: 200,
+    lux: 50,
+    chelsy: 150,
+  })
+); // 400
