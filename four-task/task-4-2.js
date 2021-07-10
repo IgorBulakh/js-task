@@ -9,6 +9,7 @@ const inventory = {
 
     this.items.push(itemName);
   },
+
   remove(itemName) {
     console.log(`Removing ${itemName} from inventory`);
 
@@ -16,10 +17,14 @@ const inventory = {
   },
 };
 
+//===========================================
+
 const invokeInventoryAction = function (itemName, action) {
   console.log(`Invoking action on ${itemName}`);
   action(itemName);
 };
+
+//===========================================
 
 invokeInventoryAction("Medkit", inventory.add.bind(inventory));
 // Invoking action on Medkit
